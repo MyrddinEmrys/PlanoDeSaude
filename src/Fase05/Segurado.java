@@ -13,10 +13,10 @@ import java.util.Random;
  * @author Alden Fachetti
  */
 public class Segurado {
-    private planoDeSaude planoSaude;
+    private PlanoDeSaude planoSaude;
     private Autorizacao autorizacao ;
-    public Segurado(planoDeSaude planoSaude, Autorizacao autorizacao) {
-        this.planoSaude  = new planoDeSaude();
+    public Segurado(PlanoDeSaude planoSaude, Autorizacao autorizacao) {
+        this.planoSaude  = new PlanoDeSaude();
         this.autorizacao = new Autorizacao();
     } 
     
@@ -87,7 +87,7 @@ public class Segurado {
         System.out.println("2-) Não");
     }
     
-    public static void menuPlanos(planoDeSaude p,Segurado s){
+    public static void menuPlanos(PlanoDeSaude p,Segurado s){
         System.out.println("Lista de planos do "+s.getNome()+":");
         for (int i = 0; i < p.getplanoSaude().size(); i++) {
             System.out.println((i+1)+": "+p.getplanoSaude().get(i));
@@ -95,7 +95,7 @@ public class Segurado {
         System.out.println("Escolha a opção");
     }
     
-    public static void mostrarDados(Segurado s, planoDeSaude p,Autorizacao a,String pl,String es,
+    public static void mostrarDados(Segurado s, PlanoDeSaude p,Autorizacao a,String pl,String es,
                                     Autorizado e2,String t,ItemDeProcedimentos l2, ItemDeProcedimentos l,
                                     ItemDeProcedimentos l1){
         System.out.println("Nome: " + s.getNome());
@@ -119,9 +119,9 @@ public class Segurado {
         Segurado s = new Segurado();
         Segurado s1 = new Segurado();
         Segurado s2 = new Segurado();
-        planoDeSaude p = new planoDeSaude();
-        planoDeSaude p1 = new planoDeSaude();
-        planoDeSaude p2 = new planoDeSaude();
+        PlanoDeSaude p = new PlanoDeSaude();
+        PlanoDeSaude p1 = new PlanoDeSaude();
+        PlanoDeSaude p2 = new PlanoDeSaude();
         Autorizacao a = new Autorizacao();
         Autorizacao a1 = new Autorizacao();
         Autorizacao a2 = new Autorizacao();

@@ -11,12 +11,12 @@ import java.util.ArrayList;
  *
  * @author Alden Fachetti
  */
-public class planoDeSaude {
+public class PlanoDeSaude {
     private Segurado segurado;
     private Operadora operadora;
     private Procedimento procedimento;
     
-    public planoDeSaude(Segurado segurado,Operadora operadora,Procedimento procedimento){
+    public PlanoDeSaude(Segurado segurado,Operadora operadora,Procedimento procedimento){
         this.segurado = new Segurado();
         this.operadora = operadora;
         this.procedimento = new Procedimento();
@@ -24,19 +24,19 @@ public class planoDeSaude {
     
     private long numAutorizacao;
     private String nome;
-    private ArrayList<planoDeSaude> planoSaude;
+    private ArrayList<PlanoDeSaude> planoSaude;
 
-    public planoDeSaude() {
+    public PlanoDeSaude() {
         this.segurado = new Segurado();
         this.planoSaude = new ArrayList();
     }
     
     
-    public void addplanoSaude(planoDeSaude plano){
+    public void addplanoSaude(PlanoDeSaude plano){
         this.planoSaude.add(plano);
     }
     
-    public ArrayList<planoDeSaude> getplanoSaude(){
+    public ArrayList<PlanoDeSaude> getplanoSaude(){
         return planoSaude;
     }
     

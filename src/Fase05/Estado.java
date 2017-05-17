@@ -17,7 +17,7 @@ public class Estado {
     }
     
     protected String estado;
-
+    
     public String getEstado() {
         return estado;
     }
@@ -29,7 +29,7 @@ public class Estado {
     public Estado() {
         
     }
-    
+        
     public enum tiposEstado{
         AUTORIZADO("Autorizado"),NEGADO("Negado"),PENDENTE("Pendente");
         private final String opcao;
@@ -40,6 +40,6 @@ public class Estado {
         public String getTipoEstado() {
             return opcao;
         }
-        
     }
+  
 }

@@ -11,13 +11,13 @@ package Fase05;
  */
 public class Operadora {
     private String nome;
-    private planoDeSaude planoSaude = new planoDeSaude();
+    private PlanoDeSaude planoSaude = new PlanoDeSaude();
 
-    public planoDeSaude getPlanoSaude() {
+    public PlanoDeSaude getPlanoSaude() {
         return planoSaude;
     }
 
-    public void setPlanoSaude(planoDeSaude planoSaude) {
+    public void setPlanoSaude(PlanoDeSaude planoSaude) {
         this.planoSaude = planoSaude;
     }
 
@@ -29,7 +29,7 @@ public class Operadora {
         this.nome = nome;
     }
     
-    public Operadora(planoDeSaude planoSaude){
+    public Operadora(PlanoDeSaude planoSaude){
         this.planoSaude = planoSaude;
     }
 }

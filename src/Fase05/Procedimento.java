@@ -10,10 +10,10 @@ package Fase05;
  * @author Alden Fachetti
  */
 public class Procedimento {
-    private planoDeSaude planoSaude ;
+    private PlanoDeSaude planoSaude ;
     private ItemDeProcedimentos ListaDeProcedimentos;
-    public Procedimento(planoDeSaude planoSaude, ItemDeProcedimentos ListaDeProcedimentos){
-        this.planoSaude = new planoDeSaude();
+    public Procedimento(PlanoDeSaude planoSaude, ItemDeProcedimentos ListaDeProcedimentos){
+        this.planoSaude = new PlanoDeSaude();
         this.ListaDeProcedimentos = new ItemDeProcedimentos();
     }
     private String nome;
